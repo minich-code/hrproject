@@ -1,0 +1,14 @@
+pandas 
+numpy 
+plotly
+matplotlib 
+scikit-learn 
+seaborn 
+xgboost
+-e .
+
+
+# The -e . entry is a specific notation used in Python packaging to specify that the current directory (denoted by ‘.’)
+# should be installed as an editable package. That meeans you can make changes to the code and test them immediately 
+# without the need to reinstall the package every time a change is made
+
