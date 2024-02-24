@@ -37,13 +37,13 @@ class FileOperationError(Exception):
         # Return the error message
         return self.error_message
     
-# Try the exception if it will work
-if __name__ == "__main__":
-    try:
-        a = 1/0
-    except Exception as e:
-        logging.info("Divide by zero error occurred")
-        raise FileOperationError(e, sys)
+# # Try the exception if it will work
+# if __name__ == "__main__":
+#     try:
+#         a = 1/0
+#     except Exception as e:
+#         logging.info("Divide by zero error occurred")
+#         raise FileOperationError(e, sys)
 
 
 
