@@ -1,5 +1,8 @@
 # Import the sys module for accessing system related information 
-import sys 
+import sys
+from src.logger import logging
+
+
 
 # Define/create a function called error_message_detail that takes two arguments error; which represents the error message and 
 # 'error_detail' which is the object that contains detailed information about the error
@@ -33,3 +36,15 @@ class FileOperationError(Exception):
     def __str__(self):
         # Return the error message
         return self.error_message
+    
+# Try the exception if it will work
+if __name__ == "__main__":
+    try:
+        a = 1/0
+    except Exception as e:
+        logging.info("Divide by zero error occurred")
+        raise FileOperationError(e, sys)
+
+
+
+

@@ -1,0 +1,13 @@
+prefix=e:/MLproject/hrproject/.conda/Library
+exec_prefix=e:/MLproject/hrproject/.conda/Library
+libdir=e:/MLproject/hrproject/.conda/Library/lib
+sharedlibdir=e:/MLproject/hrproject/.conda/Library/lib
+includedir=e:/MLproject/hrproject/.conda/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
